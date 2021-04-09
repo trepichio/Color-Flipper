@@ -1,0 +1,83 @@
+:root {
+  --active-link: #00ffff;
+  --color-tag: #Fe34fe;
+  --background-chosen-color: #ffffff;
+  --nav-height: 80px
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+header {
+    /* avoids background-color to overlap box-shadow of header */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 1px 7px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  height: var(--nav-height);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  height: 100%;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: var(--active-link);
+}
+
+#flipper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - var(--nav-height));
+  background-color: var(--background-chosen-color);
+  font-weight: bold;
+}
+
+#background-color-container {
+  font-size: clamp(1rem, 4vw, 3rem);
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+}
+
+#color-tag {
+  color: var(--color-tag);
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: solid 0.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-transparent {
+  background-color: transparent;
+}
+
+.link-active {
+  color: var(--active-link);
+}
