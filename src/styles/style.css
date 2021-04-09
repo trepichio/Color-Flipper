@@ -1,6 +1,6 @@
 :root {
   --active-link: #00ffff;
-  --color-tag: #Fe34fe;
+  --color-tag: var(--background-chosen-color);
   --background-chosen-color: #ffffff;
   --nav-height: 80px
 }
@@ -56,12 +56,13 @@ header {
 }
 
 #background-color-container {
-  font-size: clamp(1rem, 4vw, 3rem);
+  font-size: clamp(1rem, 3vw, 3rem);
   background-color: #000;
   color: #fff;
   padding: 0.5rem;
   border-radius: 10px;
   margin-bottom: 1.3rem;
+  text-align: center;
 }
 
 #color-tag {
