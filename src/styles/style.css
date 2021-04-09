@@ -19,9 +19,17 @@ header {
 
 .nav-container {
   height: var(--nav-height);
+  display: flex;
+  align-items: center;
+}
+
+.nav-container h2 {
+  padding-left: 1rem;
+  flex: 2
 }
 
 .nav-links {
+  flex: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
